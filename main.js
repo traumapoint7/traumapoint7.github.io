@@ -1,5 +1,4 @@
 kakao.maps.load(() => {
-
   function useGPS() {
     if (!navigator.geolocation) {
       alert("GPS를 지원하지 않는 브라우저입니다.");
@@ -45,5 +44,4 @@ kakao.maps.load(() => {
   // 전역 함수 등록
   window.useGPS = useGPS;
   window.calculateETA = calculateETA;
-
 });
