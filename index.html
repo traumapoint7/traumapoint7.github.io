@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>랑데트라우마 웹앱</title>
+  <link rel="stylesheet" href="style.css" />
+  <script
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b9ccd41f81d72605a0882435c138dc91&autoload=false&libraries=services,clusterer"
+    defer
+  ></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1>랑데트라우마 웹앱 (SDK 기반)</h1>
+  <p>출발지를 입력하세요:</p>
+  <input type="text" id="departure" placeholder="예: 광명역" />
+  <button onclick="useGPS()">📍 현재 위치로 설정</button>
+  <button onclick="calculateETA()">ETA 계산</button>
+  <div id="result">⏳</div>
+</body>
+</html>
